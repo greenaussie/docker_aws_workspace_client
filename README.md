@@ -21,6 +21,10 @@ bin/create.sh
 bin/start.sh
 ```
 
+## Updates
+
+Rebuild to update.
+
 ## References
 
 1. [https://clients.amazonworkspaces.com/linux-install.html](https://clients.amazonworkspaces.com/linux-install.html)
