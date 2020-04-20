@@ -2,6 +2,13 @@
 
 Amazon WorkSpace client is released for Ubuntu 18.04. This allows the released package to be built as a Docker image, which can be run on a different Linux (or Linux like) distro. The author currently uses Fedora 31.
 
+## Prequistes
+
+1. Docker
+1. Bash
+
+## Instructions
+
 ```bash
 # Build the image
 bin/build.sh
@@ -13,3 +20,8 @@ bin/create.sh
 
 bin/start.sh
 ```
+
+## References
+
+1. [https://clients.amazonworkspaces.com/linux-install.html](https://clients.amazonworkspaces.com/linux-install.html)
+1. [https://stackoverflow.com/questions/16296753/can-you-run-gui-applications-in-a-docker-container](https://stackoverflow.com/questions/16296753/can-you-run-gui-applications-in-a-docker-container)
