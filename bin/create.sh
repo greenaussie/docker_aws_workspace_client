@@ -5,7 +5,7 @@
 index=${1}
 
 XSOCK=/tmp/.X11-unix
-XAUTH=/tmp/.docker.xauth
-xauth nlist :0 | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
-chmod 644 ${XAUTH}
-podman create --name workspace_client_${index} -v $XSOCK:$XSOCK -v $XAUTH:$XAUTH -e DISPLAY=$DISPLAY -e XAUTHORITY=$XAUTH  workspace_client:latest
+# XAUTH=/tmp/.docker.xauth
+# xauth nlist :0 | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
+# chmod 0644 ${XAUTH}
+podman create --name workspace_client_${index} --security-opt=label=type:container_runtime_t -e DISPLAY -v $XSOCK:$XSOCK -e DISPLAY=$DISPLAY  workspace_client:latest
