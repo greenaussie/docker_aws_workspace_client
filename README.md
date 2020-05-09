@@ -1,6 +1,8 @@
 # AWS WorkSpace client for Linux under Docker on Linux
 
-AWS WorkSpace client is released for Ubuntu 18.04. This allows the released package to be built as a Docker image, which can be run on a different Linux (or Linux like) distro. The author currently uses Fedora 31.
+> Currently not working with podman.
+
+AWS WorkSpace client is released for Ubuntu 18.04. This allows the released package to be built as a Podman image, which can be run on a different Linux (or Linux like) distro. The author currently uses Fedora 31.
 
 ## Prequistes
 
