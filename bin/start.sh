@@ -4,4 +4,4 @@
 
 index=${1}
 
-docker start workspace_client_${index}
+podman start workspace_client_${index}

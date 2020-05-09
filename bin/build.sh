@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t workspace_client .
+podman build --no-cache -t workspace_client .
