@@ -2,11 +2,11 @@
 
 > Currently not working with podman.
 
-AWS WorkSpace client is released for Ubuntu 18.04. This allows the released package to be built as a Podman image, which can be run on a different Linux (or Linux like) distro. The author currently uses Fedora 31.
+AWS WorkSpace client is released for Ubuntu 18.04. This allows the released package to be built as a Podman image, which can be run on a different Linux (or Linux like) distro. The author currently uses Fedora 32.
 
 ## Prequistes
 
-1. Docker
+1. Podman (suits me are you using Fedora??)
 1. Bash
 
 ## Instructions
@@ -15,12 +15,8 @@ AWS WorkSpace client is released for Ubuntu 18.04. This allows the released pack
 # Build the image
 bin/build.sh
 
-# Create the container
-bin/create.sh
-
-## Start the container
-
-bin/start.sh
+# Create and the container (deleted on exit, settings not currently saved)
+bin/run.sh
 ```
 
 ## Updates
